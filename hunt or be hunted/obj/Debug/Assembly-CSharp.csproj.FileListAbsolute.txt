@@ -1,0 +1,2 @@
+C:\Users\bernat.grifol\Desktop\DAM-VIOD\Unity\hunt or be hunted\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\bernat.grifol\Desktop\DAM-VIOD\Unity\hunt or be hunted\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
