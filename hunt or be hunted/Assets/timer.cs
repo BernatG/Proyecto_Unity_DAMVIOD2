@@ -18,12 +18,17 @@ public class timer : MonoBehaviour
     private float escalaDeTiempoAlPausar, escalaDeTiempoInicial;
     private bool estaPausado = false;
 
+    public GameObject imageLost;
+    public GameObject buttonRestartGame;
+
     // Start is called before the first frame update
     void Start()
     {
         escalaDeTiempoInicial = escalaDeTiempo;
 
         TiempoAMostrarEnSegundos = tiempoInicial;
+
+        imageLost.SetActive(false);
 
         ActualizarReloj(tiempoInicial);
     }
@@ -35,6 +40,7 @@ public class timer : MonoBehaviour
 
         TiempoAMostrarEnSegundos -= tiempoDelFrameConTimeScale;
         ActualizarReloj(TiempoAMostrarEnSegundos);
+
     }
 
     public void ActualizarReloj(float tiempoEnSegundos)
@@ -43,7 +49,13 @@ public class timer : MonoBehaviour
         int segundos = 0;
         string textoDelReloj;
 
-        if (tiempoEnSegundos < 0) tiempoEnSegundos = 0;
+        if (tiempoEnSegundos <= 0)
+        {
+            tiempoEnSegundos = 0;
+            imageLost.SetActive(true);
+            buttonRestartGame.SetActive(true);
+            Time.timeScale = 0;
+        }
 
         minutos = (int)tiempoEnSegundos / 60;
         segundos = (int)tiempoEnSegundos % 60;

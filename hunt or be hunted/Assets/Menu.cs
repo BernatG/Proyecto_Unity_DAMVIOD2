@@ -35,5 +35,10 @@ public class Menu : MonoBehaviour
         cinemachine.SetActive(true);
         wolf.SetActive(true);
     }
+    public void RestartGame()
+    {
+        Application.LoadLevel(Application.loadedLevel);
+    }
+
 
 }

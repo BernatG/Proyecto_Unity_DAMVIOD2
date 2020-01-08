@@ -10,6 +10,10 @@ public class eat : MonoBehaviour
     private int needFood;
     public GameObject meat;
 
+    public GameObject textHome;
+    public GameObject ImageWine;
+    public GameObject buttonRestartGame;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +35,11 @@ public class eat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(food == needFood)
+        {
+            textHome.SetActive(true);
+        }
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -41,6 +49,16 @@ public class eat : MonoBehaviour
             food += 1;
             TextMeat.text = food + " / " + needFood;
             Destroy(other.gameObject);
+        }
+
+        if(food == needFood)
+        {
+            if (other.gameObject.tag == "hose")
+            {
+                ImageWine.SetActive(true);
+                buttonRestartGame.SetActive(true);
+                Time.timeScale = 0;
+            }
         }
     }
 }

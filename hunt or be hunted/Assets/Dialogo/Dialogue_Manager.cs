@@ -15,6 +15,7 @@ public class Dialogue_Manager : MonoBehaviour
 
     string activeSentence;
     public float typingSpeed;
+    private float Speed;
 
     public GameObject canvasDialogue;
     public GameObject canvasTimer;
@@ -26,6 +27,7 @@ public class Dialogue_Manager : MonoBehaviour
         StartDialogue();
         gameObject.GetComponent<movement>().enabled = false;
         canvasTimer.SetActive(false);
+        Speed = typingSpeed;
     }
 
     void StartDialogue()
@@ -62,6 +64,16 @@ public class Dialogue_Manager : MonoBehaviour
         foreach(char letter in sentence.ToCharArray())
         {
             displayText.text += letter;
+
+            if (Input.anyKey)
+            {
+                typingSpeed = typingSpeed * typingSpeed;
+            }
+            else
+            {
+                typingSpeed = Speed;
+            }
+
             yield return new WaitForSeconds(typingSpeed);
         }
     }
