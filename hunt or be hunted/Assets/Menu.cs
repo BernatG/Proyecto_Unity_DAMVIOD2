@@ -19,6 +19,7 @@ public class Menu : MonoBehaviour
         canvasDialgue.SetActive(false);
         cinemachine.SetActive(false);
         wolf.SetActive(false);
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
@@ -35,6 +36,7 @@ public class Menu : MonoBehaviour
         cinemachine.SetActive(true);
         wolf.SetActive(true);
     }
+
     public void RestartGame()
     {
         Application.LoadLevel(Application.loadedLevel);

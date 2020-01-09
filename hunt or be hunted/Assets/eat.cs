@@ -23,10 +23,9 @@ public class eat : MonoBehaviour
 
         TextMeat.text = food + " / " + needFood;
 
-
         while (needFood > bucle)
         {
-            Vector3 position = new Vector3(Random.Range(20.0f, 420.0f), 10, Random.Range(20.0f, 420.0f));
+            Vector3 position = new Vector3(Random.Range(50.0f, 400.0f), 10, Random.Range(50.0f, 400.0f));
             Instantiate(meat, position, Quaternion.identity);
             bucle += 1;
         }
@@ -39,7 +38,6 @@ public class eat : MonoBehaviour
         {
             textHome.SetActive(true);
         }
-
     }
 
     private void OnTriggerEnter(Collider other)
@@ -53,7 +51,7 @@ public class eat : MonoBehaviour
 
         if(food == needFood)
         {
-            if (other.gameObject.tag == "hose")
+            if (other.gameObject.tag == "home")
             {
                 ImageWine.SetActive(true);
                 buttonRestartGame.SetActive(true);
