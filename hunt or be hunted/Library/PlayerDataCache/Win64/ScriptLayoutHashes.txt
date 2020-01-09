@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/bernat.grifol/Desktop/hunt or be hunted.exe
+C:/Users/user/Desktop/VIOD-BernatGrifol-VS_UNITY-HuntOrBeHunted/hunt or be hunted.exe
 SceneListBegin?
 Assets/Scenes/SampleScene.unity
 SceneListEnd?
@@ -190,11 +190,10 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 5372ed2ce39229b1ac910757999a8be2 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
-cb559989b3efcfacd21d61ba1326d541 Assembly-CSharp.dll:.Menu
+ada89ae4343eeb861a7697fcc4e897eb Assembly-CSharp.dll:.Menu
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 8df2bee66a446c58b31b6bc7b1a991c6 Assembly-CSharp.dll:Cinemachine.CinemachineBrain
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Cinemachine.CinemachineHardLockToTarget
 2c38da0504d94a36e68bd2308d606900 Assembly-CSharp.dll:Cinemachine.CinemachineBasicMultiChannelPerlin
 1615d3bb1db164c1672020cea49440ce Assembly-CSharp.dll:Cinemachine.CinemachineClearShot
 905ae22d7068ec5df7dbccf548d817ce Assembly-CSharp.dll:.movement
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.examplescene
